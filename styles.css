@@ -81,3 +81,35 @@ article {
   margin-top: 50px;
   width: 250px;
 }
+
+@media only screen and (min-width: 768px) {
+  header {
+    background-image: url(images/bg-hero-desktop.svg);
+  }
+  .navbar .logo img {
+    width: 200px;
+    margin-left: 100px;
+  }
+  .navbar .free-btn {
+    margin-right: 100px;
+    font-size: var(--b-font-size);
+  }
+  article {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    text-align: left;
+  }
+  .about-img {
+    width: 600px;
+  }
+  .about-text {
+    max-width: 400px;
+  }
+  .about-text h1 {
+    text-align: left;
+  }
+  .about-text p {
+    text-align: left;
+  }
+}
