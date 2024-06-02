@@ -85,7 +85,7 @@ article {
 main {
   padding: 20px;
 }
-.gt-section {
+.section {
   display: grid;
   place-items: center;
   border-radius: 10px;
@@ -105,11 +105,13 @@ main {
 .gt-text h2 {
   font-family: var(--h-font-family);
   font-weight: var(--h-weights);
+  font-size: var(--h-font-size);
   color: var(--Very-Dark-Cyan);
   text-align: center;
 }
 .gt-text p {
   font-family: var(--b-font-family);
+  font-size: var(--b-font-size);
   color: var(--Grayish-Blue);
   text-align: center;
 }
@@ -120,10 +122,10 @@ main {
   }
   .navbar .logo img {
     width: 200px;
-    margin-left: 100px;
+    margin-left: 30px;
   }
   .navbar .free-btn {
-    margin-right: 100px;
+    margin-right: 40px;
     font-size: var(--b-font-size);
   }
   article {
@@ -133,15 +135,63 @@ main {
     text-align: left;
   }
   .about-img {
-    width: 600px;
+    width: 400px;
   }
   .about-text {
-    max-width: 400px;
+    max-width: 300px;
   }
   .about-text h1 {
     text-align: left;
   }
   .about-text p {
     text-align: left;
+  }
+  main {
+    margin-top: 10px;
+    padding: 30px;
+  }
+  .section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+  }
+  .gt-img {
+    order: 2;
+    width: 300px;
+  }
+  .gt-text {
+    order: 1;
+    max-width: 300px;
+  }
+  .gt-text h2 {
+    text-align: left;
+  }
+  .gt-text p {
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .navbar .logo img {
+    margin-left: 100px;
+  }
+  .navbar .free-btn {
+    margin-right: 100px;
+  }
+  .about-img {
+    width: 600px;
+  }
+  .section {
+    gap: 100px;
+  }
+  .about-text {
+    max-width: 400px;
+  }
+  .gt-text {
+    max-width: 460px;
+  }
+  .gt-img {
+    width: 350px;
   }
 }
