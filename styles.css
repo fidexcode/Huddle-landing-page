@@ -171,6 +171,12 @@ main {
   .gt-text p {
     text-align: left;
   }
+  .fc-img {
+    order: 1;
+  }
+  .fc-text {
+    order: 2;
+  }
 }
 @media only screen and (min-width: 1024px) {
   .navbar .logo img {
