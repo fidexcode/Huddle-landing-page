@@ -67,7 +67,8 @@ article {
   font-family: var(--b-font-family);
   font-weight: var(--b-weights);
 }
-.about-text button {
+.about-text button,
+.section-1 button {
   border: none;
   outline: none;
   color: #fff;
@@ -84,6 +85,7 @@ article {
 }
 main {
   padding: 20px;
+  margin-bottom: 200px;
 }
 .section {
   display: grid;
@@ -102,7 +104,8 @@ main {
 .gt-text {
   margin-top: 30px;
 }
-.gt-text h2 {
+.gt-text h2,
+.section-1 h2 {
   font-family: var(--h-font-family);
   font-weight: var(--h-weights);
   font-size: var(--h-font-size);
@@ -115,7 +118,47 @@ main {
   color: var(--Grayish-Blue);
   text-align: center;
 }
-
+.section-1 {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  border-radius: 10px;
+  padding: 20px 10px;
+  background-color: #fff;
+  box-shadow:
+    0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 320px;
+  position: absolute;
+  margin-top: 120px;
+}
+footer {
+  font-family: var(--b-font-family);
+  font-size: var(--b-font-size);
+  background-color: var(--Very-Dark-Cyan);
+  color: #fff;
+  padding: 20px;
+  margin-top: 100px;
+}
+.info {
+  margin-top: 160px;
+}
+.my-svg {
+  fill: #fff;
+}
+.location,
+.phone,
+.email {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.location p {
+  margin-top: 70px;
+}
+.abt-us {
+  margin-top: 30px;
+}
 @media only screen and (min-width: 768px) {
   header {
     background-image: url(images/bg-hero-desktop.svg);
