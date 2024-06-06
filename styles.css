@@ -135,6 +135,17 @@ main {
   width: 320px;
   height: 200px;
 }
+.socials {
+  margin-top: 100px;
+  text-align: center;
+  line-height: 30px;
+}
+.socials .bi {
+  border: 1px solid #fff;
+  padding: 10px;
+  border-radius: 50%;
+  margin: 10px;
+}
 footer {
   font-family: var(--b-font-family);
   font-size: var(--b-font-size);
@@ -156,7 +167,7 @@ footer {
   gap: 20px;
 }
 .location p {
-  margin-top: 70px;
+  /*margin-top: 70px;*/
 }
 .abt-us {
   margin-top: 30px;
