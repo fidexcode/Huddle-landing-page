@@ -125,16 +125,15 @@ main {
   bottom: -110px;
 }
 .section-1 {
-  display: grid;
-  place-items: center;
   text-align: center;
+  padding: 10px;
   border-radius: 10px;
-  padding: 20px 10px;
   background-color: #fff;
   box-shadow:
     0 4px 8px 0 rgba(0, 0, 0, 0.2),
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
   width: 320px;
+  height: 200px;
 }
 footer {
   font-family: var(--b-font-family);
