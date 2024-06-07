@@ -39,9 +39,11 @@ header {
   padding: 10px 20px;
   font-family: var(--b-font-family);
   font-weight: var(--b-weights);
+  font-size: var(--b-font-size);
   background-color: var(--white);
   border: none;
   border-radius: 30px;
+  cursor: pointer;
   color: var(--Very-Dark-Cyan);
   box-shadow:
     0 4px 8px 0 rgba(0, 0, 0, 0.2),
@@ -79,6 +81,11 @@ article {
   background-color: var(--pink);
   font-family: var(--b-font-family);
   font-size: var(--b-font-size);
+}
+.about-text button:hover,
+.section-1 button:hover {
+  background-color: hsl(322, 88%, 76%);
+  cursor: pointer;
 }
 .about-img {
   margin-top: 50px;
@@ -151,9 +158,13 @@ main {
   border-radius: 50%;
   margin: 10px;
 }
+.socials .bi:hover {
+  cursor: pointer;
+  color: var(--pink);
+}
 footer {
   font-family: var(--b-font-family);
-  /*font-size: var(--b-font-size);*/
+  font-size: var(--b-font-size);
   background-color: var(--Very-Dark-Cyan);
   color: var(--white);
   padding: 20px;
@@ -245,7 +256,7 @@ footer {
     align-items: start;
   }
   .info > div {
-    max-width: 200px;
+    max-width: 250px;
   }
   .abt-us {
     margin-top: unset;
@@ -273,5 +284,8 @@ footer {
   }
   .gt-img {
     width: 350px;
+  }
+  .info {
+    gap: 100px;
   }
 }
