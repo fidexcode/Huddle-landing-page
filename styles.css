@@ -125,6 +125,8 @@ main {
   bottom: -110px;
 }
 .section-1 {
+  display: grid;
+  place-items: center;
   text-align: center;
   padding: 10px;
   border-radius: 10px;
@@ -148,7 +150,7 @@ main {
 }
 footer {
   font-family: var(--b-font-family);
-  font-size: var(--b-font-size);
+  /*font-size: var(--b-font-size);*/
   background-color: var(--Very-Dark-Cyan);
   color: #fff;
   padding: 20px;
@@ -165,9 +167,6 @@ footer {
   display: flex;
   align-items: center;
   gap: 20px;
-}
-.location p {
-  /*margin-top: 70px;*/
 }
 .abt-us {
   margin-top: 30px;
@@ -232,6 +231,25 @@ footer {
   }
   .fc-text {
     order: 2;
+  }
+  .section-1 {
+    width: 600px;
+    padding: 30px 10px;
+  }
+  .info {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: start;
+  }
+  .info > div {
+    max-width: 200px;
+  }
+  .abt-us {
+    margin-top: unset;
+  }
+  .socials {
+    margin-top: unset;
   }
 }
 @media only screen and (min-width: 1024px) {
