@@ -1,15 +1,10 @@
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: #fff;
-}
 :root {
   /*Colors*/
   --pink: hsl(322, 100%, 66%);
   --Very-Pale-Cyan: hsl(193, 100%, 96%);
   --Very-Dark-Cyan: hsl(192, 100%, 9%);
   --Grayish-Blue: hsl(208, 11%, 55%);
+  --white: #fff;
 
   /*Typography*/
   --h-font-size: 25px;
@@ -18,6 +13,12 @@ body {
   --b-font-family: "Open Sans", sans-serif;
   --b-weights: 400, 700;
   --b-font-size: 18px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--white);
 }
 
 header {
@@ -38,7 +39,7 @@ header {
   padding: 10px 20px;
   font-family: var(--b-font-family);
   font-weight: var(--b-weights);
-  background-color: #fff;
+  background-color: var(--white);
   border: none;
   border-radius: 30px;
   color: var(--Very-Dark-Cyan);
@@ -71,7 +72,7 @@ article {
 .section-1 button {
   border: none;
   outline: none;
-  color: #fff;
+  color: var(--white);
   border-radius: 30px;
   padding: 10px 30px;
   margin-top: 10px;
@@ -85,7 +86,8 @@ article {
 }
 main {
   padding: 20px;
-  /*margin-bottom: 100px;*/
+  display: grid;
+  justify-content: center;
 }
 .section {
   display: grid;
@@ -93,7 +95,7 @@ main {
   border-radius: 10px;
   padding: 30px;
   margin-top: 30px;
-  background-color: #fff;
+  background-color: var(--white);
   box-shadow:
     0 4px 8px 0 rgba(0, 0, 0, 0.2),
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -123,6 +125,7 @@ main {
   display: grid;
   justify-content: center;
   bottom: -110px;
+  z-index: 1;
 }
 .section-1 {
   display: grid;
@@ -130,7 +133,7 @@ main {
   text-align: center;
   padding: 10px;
   border-radius: 10px;
-  background-color: #fff;
+  background-color: var(--white);
   box-shadow:
     0 4px 8px 0 rgba(0, 0, 0, 0.2),
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -143,7 +146,7 @@ main {
   line-height: 30px;
 }
 .socials .bi {
-  border: 1px solid #fff;
+  border: 1px solid var(--white);
   padding: 10px;
   border-radius: 50%;
   margin: 10px;
@@ -152,14 +155,14 @@ footer {
   font-family: var(--b-font-family);
   /*font-size: var(--b-font-size);*/
   background-color: var(--Very-Dark-Cyan);
-  color: #fff;
+  color: var(--white);
   padding: 20px;
 }
 .info {
   margin-top: 160px;
 }
 .my-svg {
-  fill: #fff;
+  fill: var(--white);
 }
 .location,
 .phone,
@@ -175,13 +178,9 @@ footer {
   header {
     background-image: url(images/bg-hero-desktop.svg);
   }
-  .navbar .logo img {
-    width: 200px;
-    margin-left: 30px;
-  }
-  .navbar .free-btn {
-    margin-right: 40px;
-    font-size: var(--b-font-size);
+  .navbar {
+    justify-content: center;
+    gap: 500px;
   }
   article {
     display: flex;
@@ -232,6 +231,9 @@ footer {
   .fc-text {
     order: 2;
   }
+  .section-1-container {
+    bottom: -150px;
+  }
   .section-1 {
     width: 600px;
     padding: 30px 10px;
@@ -253,11 +255,9 @@ footer {
   }
 }
 @media only screen and (min-width: 1024px) {
-  .navbar .logo img {
-    margin-left: 100px;
-  }
-  .navbar .free-btn {
-    margin-right: 100px;
+  .navbar {
+    justify-content: center;
+    gap: 800px;
   }
   .about-img {
     width: 600px;
